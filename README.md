@@ -8,7 +8,7 @@
 
 ------
 
-# Fkrzski PHP Steam API
+# Fkrzski / PHP Steam API
 
 This package provides a wonderful **PHP Steam API client** to start building your next Steam-powered application
 
