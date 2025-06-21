@@ -1,11 +1,12 @@
 <!--
-- Fill in the form below correctly. This will help the Peck team to understand the PR and also work on it.
+- Fill in the form below correctly. This will help our team to understand the PR and also work on it.
 -->
 
 ### What:
 
 - [ ] Bug Fix
 - [ ] New Feature
+- [ ] Steam API Enhancement
 
 ### Description:
 

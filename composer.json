@@ -1,7 +1,7 @@
 {
-    "name": "fkrzski/php-package-skeleton",
-    "description": "A skeleton repository for PHP packages",
-    "keywords": ["php", "package", "skeleton"],
+    "name": "fkrzski/php-steam-api",
+    "description": "A modern PHP library for interacting with Steam Web API",
+    "keywords": ["php", "steam", "api", "web-api", "gaming"],
     "license": "MIT",
     "authors": [
         {
@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Fkrzski\\PhpPackageSkeleton\\": "src/"
+            "Fkrzski\\SteamApi\\": "src/"
         }
     },
     "autoload-dev": {

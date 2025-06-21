@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Fkrzski\PhpPackageSkeleton;
+namespace Fkrzski\SteamApi;
 
 /**
  * @internal
