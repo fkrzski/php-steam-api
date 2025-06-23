@@ -41,6 +41,7 @@ jobs:
 
   ci:
     runs-on: ${{ matrix.os }}
+    needs: changes
     if: ${{ needs.changes.outputs.src == 'true' || needs.changes.outputs.composer == 'true' }}
     strategy:
       fail-fast: true
