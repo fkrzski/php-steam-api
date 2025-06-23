@@ -1,7 +1,7 @@
 {
     "name": "fkrzski/php-steam-api",
     "description": "A modern PHP library for interacting with Steam Web API",
-    "keywords": ["php", "steam", "api", "web-api", "gaming"],
+    "keywords": ["php", "steam", "api", "web-api", "gaming", "saloon"],
     "license": "MIT",
     "authors": [
         {
@@ -10,14 +10,17 @@
         }
     ],
     "require": {
-        "php": "^8.3"
+        "php": "^8.3",
+        "saloonphp/rate-limit-plugin": "^2.0",
+        "saloonphp/saloon": "^3.5"
     },
     "require-dev": {
-        "laravel/pint": "^1.0",
-        "pestphp/pest": "^3.0",
-        "pestphp/pest-plugin-type-coverage": "^3.0",
-        "phpstan/phpstan": "^2.0",
-        "rector/rector": "^2.0",
+        "jonpurvis/lawman": "^4.1",
+        "laravel/pint": "^1.22.1",
+        "pestphp/pest": "^4.0",
+        "pestphp/pest-plugin-type-coverage": "^4.0",
+        "phpstan/phpstan": "^2.1.17",
+        "rector/rector": "^2.0.17",
         "symfony/var-dumper": "^7.0"
     },
     "autoload": {
@@ -42,9 +45,9 @@
     "scripts": {
         "lint": "pint",
         "refactor": "rector",
-        "test:type-coverage": "pest --type-coverage --exactly=100",
+        "test:type-coverage": "pest --type-coverage --min=100 --compact",
         "test:lint": "pint --test",
-        "test:unit": "pest --coverage --exactly=100",
+        "test:unit": "pest --coverage --min=100",
         "test:types": "phpstan",
         "test:refactor": "rector --dry-run",
         "test": [
@@ -53,6 +56,10 @@
             "@test:unit",
             "@test:types",
             "@test:refactor"
+        ],
+        "code-quality": [
+            "@lint",
+            "@refactor"
         ]
     }
 }

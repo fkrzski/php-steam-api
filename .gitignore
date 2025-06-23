@@ -4,7 +4,9 @@
 /.php-cs-fixer.php
 /composer.lock
 /phpunit.xml
+/cache/
 /vendor/
 /.idea/
 *.swp
 *.swo
+test.php

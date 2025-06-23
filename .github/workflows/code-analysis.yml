@@ -45,12 +45,13 @@ jobs:
 
   ci:
     runs-on: ${{ matrix.os }}
+    needs: changes
     if: ${{ needs.changes.outputs.src == 'true' || needs.changes.outputs.composer == 'true' || needs.changes.outputs.pint == 'true' || needs.changes.outputs.phpstan == 'true' || needs.changes.outputs.rector == 'true' }}
     strategy:
       fail-fast: true
       matrix:
         os: [ubuntu-latest]
-        php: [8.3]
+        php: [8.4]
         dependency-version: [prefer-lowest, prefer-stable]
 
     name: Code analysis P${{ matrix.php }} - ${{ matrix.os }} - ${{ matrix.dependency-version }}
@@ -81,6 +82,9 @@ jobs:
 
     - name: Install Composer dependencies
       run: composer update --${{ matrix.dependency-version }} --no-interaction --prefer-dist
+
+    - name: Create cache directory
+      run: mkdir -p cache
 
     - name: Run coding style checks
       run: composer test:lint
