@@ -17,7 +17,7 @@
     "require-dev": {
         "jonpurvis/lawman": "^4.1",
         "laravel/pint": "^1.0",
-        "pestphp/pest": "^3.1",
+        "pestphp/pest": "^3.2",
         "pestphp/pest-plugin-type-coverage": "^3.0",
         "phpstan/phpstan": "^2.0",
         "rector/rector": "^2.0",
@@ -45,9 +45,9 @@
     "scripts": {
         "lint": "pint",
         "refactor": "rector",
-        "test:type-coverage": "pest --type-coverage --exactly=100 --compact",
+        "test:type-coverage": "pest --type-coverage --min=100 --compact",
         "test:lint": "pint --test",
-        "test:unit": "pest --coverage --exactly=100",
+        "test:unit": "pest --coverage --min=100",
         "test:types": "phpstan",
         "test:refactor": "rector --dry-run",
         "test": [
