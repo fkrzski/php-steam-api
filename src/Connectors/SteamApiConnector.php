@@ -39,6 +39,8 @@ final class SteamApiConnector extends Connector
 
     /**
      * {@inheritDoc}
+     *
+     * @return array<int, Limit>
      */
     protected function resolveLimits(): array
     {
