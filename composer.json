@@ -16,7 +16,7 @@
     },
     "require-dev": {
         "jonpurvis/lawman": "^4.1",
-        "laravel/pint": "^1.0",
+        "laravel/pint": "^1.17",
         "pestphp/pest": "^3.2",
         "pestphp/pest-plugin-type-coverage": "^3.0",
         "phpstan/phpstan": "^2.0",
