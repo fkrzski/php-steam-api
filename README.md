@@ -1,4 +1,4 @@
-<p align="center">
+<p style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: center;">
 <img src="./art/banner.png" alt="Fkrzski PHP Steam API"/>
 <img alt="GitHub branch check runs" src="https://img.shields.io/github/check-runs/fkrzski/php-steam-api/master?style=for-the-badge">
 <img alt="Packagist Downloads" src="https://img.shields.io/packagist/dt/fkrzski/php-steam-api?style=for-the-badge">
